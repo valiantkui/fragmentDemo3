@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.planning.college.fragmentdemo3.MainActivity">
+
+<EditText
+    android:id="@+id/et_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="要传的内容"
+    />
+
+    <Button
+        android:id="@+id/btn_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击我传值"
+        android:layout_below="@+id/et_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendValue"
+        android:gravity="center"
+        />
+
+
+    <!--展示内容的布局（fragment）-->
+    <LinearLayout
+        android:id="@+id/contentlayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        ></LinearLayout>
+</RelativeLayout>
